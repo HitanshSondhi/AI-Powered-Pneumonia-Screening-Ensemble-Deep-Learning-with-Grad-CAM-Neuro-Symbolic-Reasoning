@@ -3,6 +3,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)](https://tensorflow.org)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Deploy-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://streamlit.io)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 [![Dataset](https://img.shields.io/badge/Dataset-Kaggle%20CXR-20BEFF?style=flat-square&logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
 
@@ -327,7 +328,29 @@ metrics = batch_evaluate(
 
 ---
 
+## 📂 Project Structure
 
+```
+pneumonia-detection/
+├── data/
+│   ├── train/
+│   │   ├── NORMAL/
+│   │   └── PNEUMONIA/
+│   ├── val/
+│   └── test/
+├── models/
+│   ├── train_efficientnet.py
+│   ├── train_densenet.py
+│   └── ensemble.py
+├── explainability/
+│   └── gradcam.py
+├── reasoning/
+│   └── neuro_symbolic.py
+├── evaluate/
+│   └── metrics.py
+├── app.py                  # Streamlit deployment
+├── requirements.txt
+└── README.md
 ```
 
 ---
