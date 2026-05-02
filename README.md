@@ -306,11 +306,7 @@ print(result['dominant_feature']) # top activated radiological rule
 print(result['models_agree'])     # True / False
 ```
 
-### Streamlit Web App
 
-```bash
-streamlit run app.py
-```
 
 Upload a chest X-ray and receive a full clinical report including prediction, confidence, severity score, Grad-CAM heatmaps, and recommended action.
 
@@ -326,32 +322,7 @@ metrics = batch_evaluate(
 )
 ```
 
----
 
-## 📂 Project Structure
-
-```
-pneumonia-detection/
-├── data/
-│   ├── train/
-│   │   ├── NORMAL/
-│   │   └── PNEUMONIA/
-│   ├── val/
-│   └── test/
-├── models/
-│   ├── train_efficientnet.py
-│   ├── train_densenet.py
-│   └── ensemble.py
-├── explainability/
-│   └── gradcam.py
-├── reasoning/
-│   └── neuro_symbolic.py
-├── evaluate/
-│   └── metrics.py
-├── app.py                  # Streamlit deployment
-├── requirements.txt
-└── README.md
-```
 
 ---
 
